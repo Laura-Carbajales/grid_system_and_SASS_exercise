@@ -1,0 +1,81 @@
+.footer {
+  background-color: $colorMain;
+  border-top: 1px solid #54585a;
+  width: 100%;
+  padding: 30px 0 30px 0;
+  color: $colorWhite;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 25 50 25;
+
+  @media (min-width: 700px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20 60 20;
+  }
+
+  &__copy {
+    font-size: 14px;
+    font-weight: bold;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+
+    @media (min-width: 700px) {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      text-align: start;
+      margin-left: 50px;
+    }
+  }
+  &__rrss {
+    padding: 10px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    h3 {
+      padding-bottom: 5px;
+    }
+
+    @media (min-width: 700px) {
+      grid-column: 3/4;
+      grid-row: 2/2;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      padding-right: 50px;
+    }
+    &--list {
+      list-style: none;
+      a {
+        text-align: start;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        @media (min-width: 700px) {
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+        }
+      }
+    }
+  }
+  &__logo {
+    height: 45px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: 40%;
+    padding-right: 40%;
+
+    @media (min-width: 700px) {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      margin-left: 50px;
+      padding: 0;
+      height: 100px;
+    }
+  }
+}
