@@ -5,6 +5,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 220px;
   grid-gap: 10px;
+
   @media all and (min-width: 700px) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 220px;
@@ -18,6 +19,7 @@
 
   &__card {
     position: relative;
+
     &--img {
       height: 220px;
       width: 100%;

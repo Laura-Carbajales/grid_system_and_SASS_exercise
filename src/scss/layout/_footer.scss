@@ -64,7 +64,7 @@
     }
   }
   &__logo {
-    height: 45px;
+    width: 100px;
     grid-column: 2/3;
     grid-row: 1/2;
     padding-left: 40%;
@@ -73,7 +73,7 @@
     @media (min-width: 700px) {
       grid-column: 1/2;
       grid-row: 2/3;
-      margin-left: 50px;
+      margin-left: 80px;
       padding: 0;
       height: 100px;
     }
